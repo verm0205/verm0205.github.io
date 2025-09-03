@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Profiel</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+
+<body class="contact">
+    <ul class="navbar">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/profile.html">Profile</a></li>
+        <li><a class="active" href="/pages/contact.html">Contact</a></li>
+        <li><a href="/pages/about.html">About</a></li>
+    </ul>
+
+    <header>
+        <h1>Contact</h1>
+        <p>Neem gerust contact met mij op via het onderstaande formulier.</p>
+    </header>
+
+    <main>
+        <article>
+            <form action="mailto:verm0205@hz.nl" method="post" enctype="text/plain">
+                <label for="name">Naam:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Bericht:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                <button type="submit">Versturen</button>
+            </form>
+        </article>
+    </main>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-   /* website default styling  */
+   /* ----------------------------website default body styling----------------------------  */
    body {
         font-family: Arial, sans-serif;
         margin: 0px;
@@ -17,7 +17,7 @@
     }
 
 
- /* profile article */
+ /* ----------------------------profile article---------------------------- */
     article.profile {
         margin: 20px;
 
@@ -28,7 +28,7 @@
     }
 
     
- /* home/index article */
+ /* ----------------------------index article---------------------------- */
      article.index {
         margin-bottom: 20px;
         padding: 15px;
@@ -38,9 +38,48 @@
     }
  
 
-    
-/* navbar */
-ul.navbar {
+ /* ----------------------------contact---------------------------- */
+
+ /* ---------------- CONTACT PAGE ---------------- */
+body.contact {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+body.contact main {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+body.contact article {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+body.contact label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+body.contact button:hover {
+    background-color: #004c99;
+}
+
+
+/* ----------------------------navbar---------------------------- */
+
+/* ul.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -62,4 +101,33 @@ ul.navbar li a {
 
 ul.navbar li a:hover {
     background-color: #111111;
+}
+ul.navbar li a.active {
+    background-color: #111111;
+} */
+
+.navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  background: #eae9e9;
+  padding: 16px 32px;
+}
+
+.navbar li { display: inline; }
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.25rem 0.5rem;
+      padding: 14px 16px;
+
+}
+
+.navbar a.active {
+  background: #333;
+  color: #fff;
+  border-radius: 4px;
 }
