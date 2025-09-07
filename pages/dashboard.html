@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <style>
+        /* Example inline styles for visualization */
+        .completed { background-color: #c8e6c9; }    /* Green */
+        .not-yet { background-color: #fff9c4; }      /* Yellow */
+        .failed { background-color: #ffcdd2; }       /* Red */
+        .nbsa { font-weight: bold; color: #1565c0; }
+    </style>
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/profile.html">Profile</a></li>
+        <li><a href="/pages/contact.html">Contact</a></li>
+        <li><a href="/pages/about.html">About</a></li>
+        <li><a href="/pages/faq.html">FAQ</a></li>
+        <li><a href="/pages/blog.html">Blog</a></li>
+        <li><a class="active" href="/pages/dashboard.html">Dashboard</a></li>
+    </ul>
+    <header>
+        <h1>Studievoortgang Dashboard</h1>
+        <p>Overzicht van behaalde en openstaande studiepunten (EC's) in jaar 1.</p>
+    </header>
+    <main>
+        <table>
+            <caption>Studievoortgang jaar 1</caption>
+            <thead>
+                <tr>
+                    <th>Kwartaal</th>
+                    <th>Vak</th>
+                    <th>Toets</th>
+                    <th>EC</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Quarter 1 -->
+                <tr>
+                    <td rowspan="2">Q1</td>
+                    <td rowspan="2">Programmeren</td>
+                    <td>Toets 1</td>
+                    <td>3</td>
+                    <td class="completed">Behaald</td>
+                </tr>
+                <tr>
+                    <td>Toets 2</td>
+                    <td>2</td>
+                    <td class="failed">Onvoldoende</td>
+                </tr>
+                <!-- Quarter 2 -->
+                <tr>
+                    <td rowspan="2">Q2</td>
+                    <td rowspan="2">Web Development</td>
+                    <td>Project</td>
+                    <td>5</td>
+                    <td class="not-yet">Nog niet afgerond</td>
+                </tr>
+                <tr>
+                    <td>Toets</td>
+                    <td>2</td>
+                    <td class="completed">Behaald</td>
+                </tr>
+                <!-- Add more rows for other quarters/courses as needed -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="nbsa">Totaal behaalde EC's</td>
+                    <td colspan="2" class="nbsa">10 / 60 (NBSA grens: 45 EC)</td>
+                </tr>
+            </tfoot>
+        </table>
+        <section>
+            <h2>Completeness Meter</h2>
+            <progress value="10" max="60"></progress>
+            <p>Je hebt 10 van de 60 EC's behaald. NBSA grens is 45 EC.</p>
+        </section>
+    </main>
+</body>
+</html>
