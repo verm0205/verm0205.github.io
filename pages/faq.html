@@ -1,36 +1,118 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ</title>
     <link rel="stylesheet" href="/css/stylesheet.css">
 </head>
+
 <body>
-    <ul class="navbar">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/pages/profile.html">Profile</a></li>
-        <li><a href="/pages/contact.html">Contact</a></li>
-        <li><a href="/pages/about.html">About</a></li>
-        <li><a class="active" href="/pages/faq.html">FAQ</a></li>
-        <li><a href="/pages/blog.html">Blog</a></li>
-    </ul>
-    <header>
-        <h1>Veelgestelde Vragen (FAQ)</h1>
-    </header>
+    <nav class="navbar" role="navigation" aria-label="Hoofd navigatie">
+        <div class="nav-left" aria-hidden="false">
+            <img src="/img/joeypfp.jpg" alt="Profielfoto" class="avatar">
+            <span class="profile-name">Joey Vermeulen</span>
+        </div>
+
+        <ul class="nav-right" role="list">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/profile.html">Profile</a></li>
+            <li><a href="/pages/dashboard.html">Dashboard</a></li>
+            <li><a class="active" href="/pages/faq.html">FAQ</a></li>
+            <li><a href="/pages/blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section>
-            <h2>Wat is Code Review?</h2>
-            <p>Code Review is het proces waarbij programmeurs elkaars code controleren op fouten en verbeteringen.</p>
-        </section>
-        <section>
-            <h2>Waarom is Code Review belangrijk?</h2>
-            <p>Het helpt om fouten te vinden, kennis te delen en de kwaliteit van software te verbeteren.</p>
-        </section>
-        <section>
-            <h2>Hoe kan ik feedback verwerken?</h2>
-            <p>Verzamel feedback, classificeer het als slordigheid of misvatting, en verbeter je code op basis daarvan.</p>
-        </section>
+        <header class="intro">
+            <h1 id="faq-title">Veelgestelde Vragen (FAQ)</h1>
+            <p>Hier staan korte, duidelijke antwoorden op veelvoorkomende vragen. Klik op een vraag om het antwoord te
+                zien.</p>
+        </header>
+
+        <ul class="faq-list" role="list">
+            <li>
+                <details>
+                    <summary>
+                        <span>1. Hoe kan je een document printen vanaf je laptop op HZ?</span>
+                        <span> - </span>
+                    </summary>
+                    <div>
+                        <p class="answer">Op onze 3e verdieping staat een printer, op de printer staat een qr code, deze
+                            kan je scannen of je gaat meteen naar:
+                            <a href="https://hz.mynetpay.nl" target="_blank"
+                                rel="noopener noreferrer">hz.mynetpay.nl</a>
+                            <br> download vervolgends de printer app om daar via je laptop mee te printen.
+                        </p>
+
+                    </div>
+                </details>
+            </li>
+
+            <li>
+                <details>
+                    <summary>
+                        <span>2. Hoe kan je een document scannen en naar je laptop sturen op HZ?</span>
+                        <span> - </span>
+                    </summary>
+                    <div>
+                        <p class="answer"> Bij de scanner, logt in en selecteert 'Scannen'. Nadat u ervoor heeft gekozen
+                            om het te verzenden
+                            naar je e-mail, pas je de instellingen aan en plaats je je document op de scanner. Zodra u
+                            op drukt
+                            "Start", de scan is voltooid en kort daarna verschijnt het bestand in uw inbox.</p>
+                    </div>
+                </details>
+            </li>
+
+            <li>
+                <details>
+                    <summary>
+                        <span>3. Hoe kan ik iets kopen (bijv. bij inschrijving IT-introductie) in de HZ
+                            webwinkel?</span>
+                        <span> - </span>
+                    </summary>
+                    <div>
+                        <p class="answer"> Je kan dingen aankopen bij de webwinkel van hz maar ook het winkeltje bij de
+                            bali</p>
+                    </div>
+                </details>
+            </li>
+
+            <li>
+                <details>
+                    <summary>
+                        <span>4. Hoe kun je een projectruimte reserveren?</span>
+                        <span> - </span>
+                    </summary>
+                    <div>
+                        <p class="answer">Het reserveren van projectruimes kan via deze link: <a
+                                href="https://hzuniversity.topdesk.net/" target="_blank"
+                                rel="noopener noreferrer">topdesk</a>
+                            als dit niet duidenlijk is hoe, kan je hier de tutorial vinden:
+                            <a href="https://hzuniversity.topdesk.net/tas/public/ssp/content/detail/knowledgeitem?origin=knowledgeBaseTop10&unid=222efc2f5baa4a5ba75647c7bec4482a"
+                                target="_blank" rel="noopener noreferrer">topdesk</a>
+                        </p>
+                    </div>
+                </details>
+            </li>
+
+            <li>
+                <details>
+                    <summary>
+                        <span>5. Wat zijn de instructies voor parkeren op de HZ-parkeerplaats?</span>
+                        <span> - </span>
+                    </summary>
+                    <div">
+                        <p class="answer">Eerst krijgt u een vergunning. Vervolgens kunt u de parkeerplaats van de HZ
+                            oprijden, je vergunning weergeven
+                            en zoek een studentenplek.</p>
+                        </div>
+                </details>
+            </li>
+        </ul>
     </main>
 </body>
+
 </html>

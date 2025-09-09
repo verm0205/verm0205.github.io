@@ -6,23 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mijn Profiel</title>
     <link rel="stylesheet" href="/css/stylesheet.css">
-
 </head>
 
 <body>
-    <ul class="navbar">
-        <li><a class="active" href="/index.html">Home</a></li>
-        <li><a href="/pages/profile.html">Profile</a></li>
-        <li><a href="/pages/contact.html">Contact</a></li>
-        <li><a href="/pages/about.html">About</a></li>
-        <li><a href="/pages/faq.html">FAQ</a></li>
-        <li><a href="/pages/blog.html">Blog</a></li>
-    </ul>
-    <header>
-        <h1>home</h1>
-        <p>Welkom op mijn home pagina</p>
-    </header>
+    <nav class="navbar" role="navigation" aria-label="Hoofd navigatie">
+        <div class="nav-left" aria-hidden="false">
+            <img src="/img/joeypfp.jpg" alt="Profielfoto" class="avatar">
+            <span class="profile-name">Joey Vermeulen</span>
+        </div>
 
+        <ul class="nav-right" role="list">
+            <li><a class="active" href="/index.html">Home</a></li>
+            <li><a href="/pages/profile.html">Profile</a></li>
+            <li><a href="/pages/dashboard.html">Dashboard</a></li>
+            <li><a href="/pages/faq.html">FAQ</a></li>
+            <li><a href="/pages/blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <section class="hero" role="region" aria-label="Welkom sectie">
+            <div class="left">
+                <img src="/img/joeypfp.jpg" alt="Joey profielfoto" class="avatar">
+                <h1>Joey HBO-ICT student</h1>
+                <p class="post-meta">leergierig, doelgericht, sociaal en op zoek naar nieuwe leer mogenlijkheden</p>
+
+
+                <div class="btn-group" role="group" aria-label="Snelle links">
+                    <a class="btn btn-primary" href="/pages/profile.html">Hier voor mijn profiel</a>
+                    <a class="btn btn-secondary" href="/pages/dashboard.html">Naar het dashboard</a>
+                </div>
+            </div>
+
+            <div class="right">
+                <a href="https://www.hz.nl/" target="_blank" rel="noopener noreferrer">
+                    <img src="/img/hz-university-of-applied-sciences.png" alt="HZ University logo" class="hz-logo">
+                </a>
+                <div>
+                    <p><strong>Waarom HBO-ICT</strong></p>
+                    <p>Leergierig, leren en altijd blijven doorleren</p>
+
+                    <ul aria-label="Waarom HBO-ICT">
+                        <li>Praktische projecten die echte skills opleveren</li>
+                        <li>Samenwerken in teams en professionele workflows</li>
+                        <li>Ruimte voor creativiteit en technische verdieping</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

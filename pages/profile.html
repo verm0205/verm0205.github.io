@@ -9,62 +9,94 @@
 </head>
 
 <body>
-    <ul class="navbar">
-        <li><a href="/index.html">Home</a></li>
-        <li><a class="active" href="/pages/profile.html">Profile</a></li>
-        <li><a href="/pages/contact.html">Contact</a></li>
-        <li><a href="/pages/about.html">About</a></li>
-        <li><a href="/pages/faq.html">FAQ</a></li>
-        <li><a href="/pages/blog.html">Blog</a></li>
-        
-    </ul>
-    <header>
-        <h1>Mijn Profiel</h1>
-        <p>Welkom op mijn eerste HTML-pagina!</p>
-    </header>
+    <nav class="navbar" role="navigation" aria-label="Hoofd navigatie">
+        <div class="nav-left" aria-hidden="false">
+            <img src="/img/joeypfp.jpg" alt="Profielfoto" class="avatar">
+            <span class="profile-name">Joey Vermeulen</span>
+        </div>
 
-
-
-
-
-    <article class="profile">
-        <img src="/img/joeypfp.jpg" alt="joey">
-
-        <h2>Persoonlijke informatie</h2>
-        <p><strong>Naam:</strong> joey</p>
-        <p><strong>Leeftijd:</strong> 20</p>
-        <p><strong>Woonplaats:</strong> oost-souburg</p>
-        <p><strong>Opleiding:</strong> HBO-ICT student bij HZ University of Applied Sciences</p>
-    </article>
-
-
-    <article class="profile">
-        <aside class="aside-menu" aria-label="Links relevant voor studie">
-            <h3>Handige links</h3>
-            <ul>
-                <li><a href="https://www.hz.nl/" target="_blank" rel="noopener noreferrer">HZ University</a></li>
-                <li><a href="https://www.github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            </ul>
-        </aside>
-    </article>
-
-
-    <article class="profile">
-        <h2>Extra-curriculaire activiteiten</h2>
-        <ul class="profile">
-            <li>MBO Software Developer afgerond (ervaring met Java, JavaScript, SQL, .NET, etc.)</li>
-            <li>Hobby’s: gamen, programmerenn</li>
+        <ul class="nav-right" role="list">
+            <li><a href="/index.html">Home</a></li>
+            <li><a class="active" href="/pages/profile.html">Profile</a></li>
+            <li><a href="/pages/dashboard.html">Dashboard</a></li>
+            <li><a href="/pages/faq.html">FAQ</a></li>
+            <li><a href="/pages/blog.html">Blog</a></li>
         </ul>
-    </article>
+    </nav>
+    <header>
+        <h1>Profiel</h1>
+        <p>Welkom op mijn introductiepagina.</p>
+    </header>
+    <main>
+        <article class="profile">
+            <img src="/img/joeypfp.jpg" alt="joey" style="float:left; width:140px; margin-right:16px;">
+            <h2>Over mij</h2>
+            <p>
+                Ik ben Joey, 20 jaar en student HBO-ICT. Ik vind het leuk om probleme op te lossen en leer graag
+                door. De afgelopen tijd heb ik me vooral gericht op HTML, CSS en ik wil
+                mijn kennis uitbreiden en misschien later iets in security gaan doen.
+            </p>
+            <p>
+                HBO-ICT past bij mij omdat ik graag concrete problemen oplos, in teamverband werk en leer omgaan met
+                grotere
+                projecten. Mijn doel is uit te groeien naar een software engineer met sterke praktische vaardigheden en
+                een groeiend leerweg van misschien iets met beveiliging.
+            </p>
+        </article>
 
-    <article class="profile">
-        <h2>Waarom HBO-ICT?</h2>
-        <p>
-            Ik heb gekozen voor HBO-ICT omdat ik mijn programmeervaardigheden verder wil ontwikkelen
-            en me wil verdiepen in cybersecurity en softwareontwikkeling. Ik werk graag praktisch,
-            maar wil ook leren om grotere projecten te plannen en samen te werken in teams.
-        </p>
-    </article>
+        <div class="two-col">
+            <article>
+                <h2>Motivatie & Doelen</h2>
+                <p class="post-meta">Waarom ik deze studie doe en wat ik wil bereiken</p>
+                <ul>
+                    <li>Groeien naar een HBO software engineer met sterke praktische vaardigheden</li>
+                    <li>Stage vinden om echte softwareproblemen op te lossen en vervolgends na mijn studie te werken
+                    </li>
+                    <li>Na en tijdens mijn studie verdiepen in security</li>
+                </ul>
+                <p>
+                    Meer lezen over HZ of mijn projecten: <a href="https://www.hz.nl/" target="_blank"
+                        rel="noopener noreferrer">HZ University</a> • <a href="https://github.com/verm0205"
+                        target="_blank" rel="noopener noreferrer">Mijn GitHub</a>
+                </p>
+            </article>
+
+            <article>
+                <h2>Vaardigheden & Tools</h2>
+                <p class="post-meta">Kort overzicht</p>
+                <ul>
+                    <li>HTML, CSS, JavaScript (React basis)</li>
+                    <li>Java, C#, SQL, .NET MAUI</li>
+                    <li>Visual Studio Code, Git, MySQL Workbench</li>
+                </ul>
+                <h3>Kwaliteiten</h3>
+                <ul>
+                    <li>Praktisch ingesteld</li>
+                    <li>Leergierig</li>
+                    <li>Probleemoplossend</li>
+                    <li>Teamspeler</li>
+                </ul>
+            </article>
+        </div>
+
+        <article>
+            <h2>Contact / Links</h2>
+            <p class="post-meta">Handige links en contact</p>
+            <aside class="aside-menu" aria-label="Links relevant voor studie">
+                <h3>Handige links</h3>
+                <ul>
+                    <li>Mijn GitHub: <a href="https://github.com/verm0205" target="_blank"
+                            rel="noopener noreferrer">github.com/verm0205</a></li>
+                    <li>Mijn HZ: <a href="https://www.hz.nl/" target="_blank" rel="noopener noreferrer">HZ
+                            University</a>
+                    <li>Mijn Mail: <a href="mailto:verm0205@hz.nl">verm0205@hz.nl</a>
+
+                    </li>
+                </ul>
+            </aside>
+        </article>
+    </main>
+
 </body>
 
 </html>
