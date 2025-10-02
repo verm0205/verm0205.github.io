@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Dashboard — Studievoortgang jaar 1</title>
+    <meta name="description"
+        content="Studievoortgang (EC's & componenten) jaar 1 — overzicht per quarter, status en NBSA grens.">
     <link rel="stylesheet" href="/css/stylesheet.css">
-
 </head>
 
 <body>
@@ -24,115 +25,137 @@
             <li><a href="/pages/blog.html">Blog</a></li>
         </ul>
     </nav>
+
     <header>
-        <h1>Studievoortgang Dashboard</h1>
-        <p>Overzicht EC's in jaar 1.</p>
+        <h1>Studievoortgang — Jaar 1</h1>
+        <p>Overzicht van alle eerstejaars te behalen ec (Behaald / In afwachting / Opnieuw).</p>
     </header>
+
     <main>
-        <table data-year="1">
-            <caption>Studievoortgang jaar 1</caption>
-            <thead>
-                <tr>
-                    <th>Quater</th>
-                    <th>Course</th>
-                    <th>EC</th>
-                    <th>Exam</th>
-                    <th>Grade</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Quater 1 -->
-                <tr>
-                    <td rowspan="3">Quater 1</td>
-                    <td>Program & Career Orientation</td>
-                    <td>2.5</td>
-                    <td>Presentation (individual)</td>
-                    <td>ungraded</td>
-                </tr>
-                <tr>
-                    <td>Computer Science Basics</td>
-                    <td>5</td>
-                    <td>Written knowledge test</td>
-                    <td>ungraded</td>
-                </tr>
-                <tr>
-                    <td>Programming Basics</td>
-                    <td>5</td>
-                    <td>Written knowledge test</td>
-                    <td>ungraded</td>
-                </tr>
-                <!-- Quater 2 -->
-                <tr>
-                    <td rowspan="3">Quater 2</td>
-                    <td rowspan="2">Object-Oriented Programming</td>
-                    <td rowspan="2">10</td>
-                    <td>Presentation (individual)</td>
-                    <td>ungraded</td>
-                </tr>
-                <tr>
-                    <td>Written knowledge test</td>
-                    <td>ungraded</td>
-                </tr>
-                <tr>
-                    <td rowspan="1">PPD</td>
-                    <td>12.5</td>
-                    <td>Criterion-referenced interview</td>
-                    <td>ungraded</td>
-                </tr>
-                <!-- Quater 3 -->
-                <tr>
-                    <td rowspan="4">Quater 3</td>
-                    <td>Business Understanding Basics</td>
-                    <td>2.5</td>
-                    <td>Assignment (individual)</td>
-                    <td>ungraded</td>
-                </tr>
-                <tr>
-                    <td rowspan="3">Framework Project 1</td>
-                    <td rowspan="3">10</td>
-                    <td>Written knowledge test</td>
-                    <td>ungraded</td>
-                </tr>
-                <tr>
-                    <td>Presentation (group)</td>
-                    <td>ungraded</td>
-                </tr>
-                <tr>
-                    <td>Portfolio</td>
-                    <td>ungraded</td>
-                </tr>
-                <!-- Quater 4 -->
-                <tr>
-                    <td rowspan="4">Quater 4</td>
-                    <td rowspan="3">Framework Project 2</td>
-                    <td rowspan="3">10</td>
-                    <td>Presentation (group)</td>
-                    <td>ungraded</td>
-                </tr>
-                <tr>
-                    <td>Portfolio</td>
-                    <td>ungraded</td>
-                </tr>
-                <tr>
-                    <td>Portfolio</td>
-                    <td>ungraded</td>
-                </tr>
-                <!-- For more courses in the 4th quater, idk if we have more -->
-                <!-- <tr>
-                    <td>Programming Basics</td>
-                    <td>..</td>
-                    <td>..</td>
-                    <td>ungraded</td>
-                </tr> -->
-            </tbody>
-            <tfoot>
-                <tr>
-                    <!-- Rn total ec is 57.5, im missing 2.5-->
-                    <td colspan="2" class="nbsa">Totaal behaalde EC's</td>
-                    <td class="nbsa">0 / 60 (NBSA grens: 45 EC)</td>
-                </tr>
-            </tfoot>
-        </table>
+        <section aria-labelledby="dashboard">
+
+            <table class="study-monitor" aria-describedby="progress-info">
+                <thead>
+                    <tr>
+                        <th>Quarter</th>
+                        <th>Course / Component</th>
+                        <th>EC</th>
+                        <th>Assessment</th>
+                        <th>Grade</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- Quarter 1 -->
+                    <tr class="status-pending">
+                        <td rowspan="3">Quarter 1</td>
+                        <td>Program &amp; Career Orientation</td>
+                        <td>2.5</td>
+                        <td>Presentation (individual)</td>
+                        <td>—</td>
+                        <td>In afwachting</td>
+                    </tr>
+                    <tr class="status-pending">
+                        <td>Computer Science Basics</td>
+                        <td>5</td>
+                        <td>Written knowledge test</td>
+                        <td>—</td>
+                        <td>In afwachting</td>
+                    </tr>
+                    <tr class="status-pending">
+                        <td>Programming Basics</td>
+                        <td>5</td>
+                        <td>Written knowledge test</td>
+                        <td>—</td>
+                        <td>In afwachting</td>
+                    </tr>
+
+                    <!-- Quarter 2 -->
+                    <tr class="status-pending">
+                        <td rowspan="3">Quarter 2</td>
+                        <td rowspan="2">Object-Oriented Programming</td>
+                        <td rowspan="2">10</td>
+                        <td>Presentation (individual)</td>
+                        <td>—</td>
+                        <td>In afwachting</td>
+                    </tr>
+                    <tr class="status-pending">
+                        <td>Written knowledge test</td>
+                        <td>—</td>
+                        <td>In afwachting</td>
+                    </tr>
+                    <tr class="status-pending">
+                        <td>PPD</td>
+                        <td>12.5</td>
+                        <td>Criterion-referenced interview</td>
+                        <td>—</td>
+                        <td>In afwachting</td>
+                    </tr>
+
+                    <!-- Quarter 3 -->
+                    <tr class="status-pending">
+                        <td rowspan="4">Quarter 3</td>
+                        <td>Business Understanding Basics</td>
+                        <td>2.5</td>
+                        <td>Assignment (individual)</td>
+                        <td>—</td>
+                        <td>In afwachting</td>
+                    </tr>
+                    <tr class="status-pending">
+                        <td rowspan="3">Framework Project 1</td>
+                        <td rowspan="3">10</td>
+                        <td>Written knowledge test</td>
+                        <td>—</td>
+                        <td>In afwachting</td>
+                    </tr>
+                    <tr class="status-pending">
+                        <td>Presentation (group)</td>
+                        <td>—</td>
+                        <td>In afwachting</td>
+                    </tr>
+                    <tr class="status-pending">
+                        <td>Portfolio</td>
+                        <td>—</td>
+                        <td>In afwachting</td>
+                    </tr>
+
+                    <!-- Quarter 4 -->
+                    <tr class="status-pending">
+                        <td rowspan="4">Quarter 4</td>
+                        <td rowspan="3">Framework Project 2</td>
+                        <td rowspan="3">10</td>
+                        <td>Presentation (group)</td>
+                        <td>—</td>
+                        <td>In afwachting</td>
+                    </tr>
+                    <tr class="status-pending">
+                        <td>Portfolio</td>
+                        <td>—</td>
+                        <td>In afwachting</td>
+                    </tr>
+                    <tr class="status-pending">
+                        <td>Portfolio</td>
+                        <td>—</td>
+                        <td>In afwachting</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3" id="progress-info"><strong>Totaal behaalde EC's</strong></td>
+                        <!-- Replace the "0" with the real total when EC's zijn behaald -->
+                        <td colspan="3" class="nbsa">0 / 60 EC — NBSA grens: 45 EC</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <p style="margin-top:12px"><strong>Legenda:</strong>
+                <span class="statusbtn status-complete">Behaald</span>
+                <span class="statusbtn status-pending">In afwachting</span>
+                <span class="statusbtn status-failed">Opnieuw</span>
+            </p>
+        </section>
     </main>
 </body>
 
