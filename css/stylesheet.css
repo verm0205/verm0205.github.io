@@ -1,10 +1,33 @@
+/* ===== Theme variables (global) ===== */
+:root{
+  --bg: #f9f9f9;
+  --surface: #ffffff;
+  --text: #222222;
+  --muted: #666666;
+  --primary: #1e90ff;        /* links / primary buttons */
+  --accent: #0a63d8;         /* darker primary for gradients */
+  --nav-bg: rgba(4,13,26,0.85);
+  --nav-text: #cfe7ff;
+  --hz-logo-height: 56px;
+  --success: #d4f7dc;
+  --success-weak: #e6f9e9;
+  --warning: #fff7d6;
+  --warning-weak: #fff8e6;
+  --danger: #ffd6d6;
+  --danger-weak: #ffe6e6;
+  --radius: 8px;
+  --shadow-1: 0 1px 4px rgba(0,0,0,0.06);
+  --shadow-2: 0 6px 18px rgba(2,6,23,0.6);
+  --max-width: 900px;
+}
+
 /* ----------------------------website default body styling----------------------------  */
    body {
         font-family: Arial, sans-serif;
         margin: 0px;
         padding: 0px;
-        background-color: #f9f9f9;
-        color: #333;
+        background-color: var(--bg);
+        color: var(--text);
         padding-top: 100px;
     }
 
@@ -14,7 +37,7 @@
     }
 
     h1 {
-        color: #0066cc;
+        color: var(--primary);
     }
     main {
         max-width: 900px;
@@ -75,28 +98,19 @@ ul.navbar li a.active {
 } */
 
 .navbar {
-  /* list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 1rem;
-  background: #eae9e9;
-  padding: 16px 32px; */
-
-  /* This is with the new fixed navbar, idk what i like more */
   list-style: none;
   margin: 0;
   padding: 12px 36px;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* profiel links, knoppen rechts */
-  background: rgba(4,13,26,0.85);
+  justify-content: space-between;
+  background: var(--nav-bg);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+  box-shadow: var(--shadow-2);
 }
 .nav-left {
   display: flex;
@@ -113,7 +127,7 @@ ul.navbar li a.active {
   background: #fff;
 }
 .profile-name {
-  color: #cfe7ff;
+  color: var(--nav-text);
   font-weight: 600;
   font-size: 0.98rem;
   white-space: nowrap;
@@ -131,7 +145,7 @@ ul.navbar li a.active {
 }
 .navbar a {
   text-decoration: none;
-  color: #cfe7ff;
+  color: var(--nav-text);
   padding: 8px 12px;
   border-radius: 6px;
   font-weight: 500;
@@ -143,7 +157,7 @@ ul.navbar li a.active {
 }
 
 .navbar a.active {
-  background: linear-gradient(90deg,#063a7a,#0a63d8);
+  background: linear-gradient(90deg, var(--primary), var(--accent));
   color: #fff;
   box-shadow: 0 6px 14px rgba(10,99,216,0.12);
 }
@@ -184,7 +198,7 @@ article h2 {
 /* HZ logo on header */
 .hz-logo {
   display: block;
-  height: 56px;
+  height: var(--hz-logo-height);
   margin: 0 auto 12px;
   object-fit: contain;
 }
@@ -207,7 +221,7 @@ article h2 {
         }
 
         th {
-            background-color: #1E90FF;
+            background-color: var(--primary);
             color: #ffffff;
         }
 
@@ -321,24 +335,24 @@ article h2 {
         }
 
         .btn-primary {
-            background: #1e90ff;
+            background: var(--primary);
             color: #fff;
         }
 
         .btn-secondary {
             background: transparent;
-            color: #1e90ff;
+            color: var(--primary);
             border: 1px solid rgba(30, 144, 255, 0.22);
         }
         /* Status colors for dashboard */
 .status-complete {
-    background: #e6f9e9; /* groen */
+    background: var(--success-weak); /* groen */
 }
 .status-pending {
-    background: #fff8e6; /* geel */
+    background: var(--warning-weak); /* geel */
 }
 .status-failed {
-    background: #ffe6e6; /* rood */
+    background: var(--danger-weak); /* rood */
 }
 
 .statusbtn {
@@ -348,6 +362,6 @@ article h2 {
     margin-left: 8px;
     font-size: 0.9rem;
 }
-.statusbtn.status-complete { background:#d4f7dc; color:#0a5a17; }
-.statusbtn.status-pending { background:#fff7d6; color:#6a5200; }
-.statusbtn.status-failed { background:#ffd6d6; color:#7a0606; }
+.statusbtn.status-complete { background: var(--success); color:#0a5a17; }
+.statusbtn.status-pending  { background: var(--warning); color:#6a5200; }
+.statusbtn.status-failed   { background: var(--danger); color:#7a0606; }
