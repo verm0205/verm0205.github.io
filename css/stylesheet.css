@@ -1,11 +1,11 @@
-/* ===== Theme variables (global) ===== */
+/* ----------------------------website global root styling----------------------------  */
 :root{
   --bg: #f9f9f9;
   --surface: #ffffff;
   --text: #222222;
   --muted: #666666;
-  --primary: #1e90ff;        /* links / primary buttons */
-  --accent: #0a63d8;         /* darker primary for gradients */
+  --primary: #1e90ff;    
+  --accent: #0a63d8;        
   --nav-bg: rgba(4,13,26,0.85);
   --nav-text: #cfe7ff;
   --hz-logo-height: 56px;
@@ -70,33 +70,6 @@
 
 /* ----------------------------navbar---------------------------- */
 
-/* ul.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-}
-
-ul.navbar li {
-    float: left;
-}
-
-ul.navbar li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-ul.navbar li a:hover {
-    background-color: #111111;
-}
-ul.navbar li a.active {
-    background-color: #111111;
-} */
-
 .navbar {
   list-style: none;
   margin: 0;
@@ -129,12 +102,12 @@ ul.navbar li a.active {
 .profile-name {
   color: var(--nav-text);
   font-weight: 600;
-  font-size: 0.98rem;
+  font-size: 16px;
   white-space: nowrap;
 }
 .nav-right {
   display: flex;
-  gap: 0.8rem;
+  gap: 13px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -178,7 +151,7 @@ article h2 {
 
 .post-meta {
   color: #666;
-  font-size: 0.9rem;
+  font-size: 14px;
   margin-bottom: 8px;
 }
 
@@ -204,7 +177,7 @@ article h2 {
 }
 
 
-/* ----------------------------dashboard article---------------------------- */
+/* ----------------------------dashboard---------------------------- */
 
   table {
             font-family: arial, sans-serif;
@@ -238,6 +211,16 @@ article h2 {
             border: none;
             text-align: left;
         }
+        .status-complete {
+            background: var(--success-weak);
+        }
+        .status-pending {
+            background: var(--warning-weak);
+        }
+        .status-failed {
+            background: var(--danger-weak);
+        }
+
 
 
 /* ----------------------------FAQ article---------------------------- */
@@ -281,11 +264,11 @@ article h2 {
 /* ----------------------------Home page---------------------------- */
 
 
-               .hero {
+        .hero {
             width: 100%;
-            padding: 2rem;
+            padding: 32px;
             display: flex;
-            gap: 2rem;
+            gap: 32px;
             align-items: center;
             justify-content: center;
             border-radius: 12px;
@@ -302,7 +285,7 @@ article h2 {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 1rem;
+            gap: 16px;
             text-align: center;
         }
 
@@ -316,19 +299,19 @@ article h2 {
 
         .hero h1 {
             margin: 0;
-            font-size: 1.9rem;
+            font-size: 30px;
         }
 
 
         .btn-group {
             display: flex;
-            gap: 0.75rem;
+            gap: 12px;
             justify-content: center;
             flex-wrap: wrap;
         }
 
         .btn {
-            padding: 0.6rem 1rem;
+            padding: 9px 16px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
@@ -344,24 +327,5 @@ article h2 {
             color: var(--primary);
             border: 1px solid rgba(30, 144, 255, 0.22);
         }
-        /* Status colors for dashboard */
-.status-complete {
-    background: var(--success-weak); /* groen */
-}
-.status-pending {
-    background: var(--warning-weak); /* geel */
-}
-.status-failed {
-    background: var(--danger-weak); /* rood */
-}
 
-.statusbtn {
-    display: inline-block;
-    padding: 6px 8px;
-    border-radius: 6px;
-    margin-left: 8px;
-    font-size: 0.9rem;
-}
-.statusbtn.status-complete { background: var(--success); color:#0a5a17; }
-.statusbtn.status-pending  { background: var(--warning); color:#6a5200; }
-.statusbtn.status-failed   { background: var(--danger); color:#7a0606; }
+  
